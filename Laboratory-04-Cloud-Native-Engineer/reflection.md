@@ -1,4 +1,4 @@
-# Mission 4 Reflection
+# Reflection
 
 This laboratory activity helped me understand the difference between Virtual Machines and containers and how containerization is used in cloud computing. One of the main things I learned is that a Docker container can start much faster than installing and starting a complete operating system inside a Virtual Machine. A Virtual Machine requires its own operating system, while a container shares the host operating system. Because of this, containers can be lightweight and faster to deploy.
 
