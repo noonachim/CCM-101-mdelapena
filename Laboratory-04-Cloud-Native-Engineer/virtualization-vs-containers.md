@@ -1,11 +1,13 @@
-# Virtualization vs. Containers
+# Virtual Machines vs. Containers
+
+## Comparison Table
 
 | Category | Virtual Machines | Containers |
 |---|---|---|
-| Architecture | Each VM has its own Guest OS | Containers share the Host OS |
+| Architecture | Includes a full Guest OS running on top of a hypervisor | Shares the Host OS kernel, only packages the application and its dependencies |
 | Boot Time | Minutes | Seconds |
-| Resource Efficiency | Heavy / High RAM | Lightweight / Low RAM |
-| Isolation Level | Hardware-level | Process-level |
+| Resource Efficiency | Heavy / High RAM usage | Lightweight / Low RAM usage |
+| Isolation Level | Hardware-level isolation | Process-level isolation |
 
 ## Summary
 
