@@ -42,14 +42,6 @@ docker rm nginx-server
 
 One challenge was understanding the difference between a Virtual Machine and a container. Another was understanding how host and container ports are connected through port mapping. Running Nginx and checking it with `curl` helped demonstrate how a service can be deployed quickly inside a container.
 
-## Screenshots
-
-### Docker Version and Status
-
-![Docker Version](screenshots/docker-version.png)
-
-### Nginx Running
-
 ![Nginx Running](screenshots/nginx-running.png)
 
 ### Container Lifecycle
