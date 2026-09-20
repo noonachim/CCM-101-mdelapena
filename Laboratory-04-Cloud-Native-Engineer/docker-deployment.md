@@ -1,80 +1,11 @@
 # Docker Deployment
 
-## Check Docker Version
+## Commands Used
 
-```bash
-docker --version
-```
-
-Displays the installed Docker version.
-
-## Check Docker Environment
-
-```bash
-docker info
-```
-
-Displays information about the Docker environment and its current configuration.
-
-## Pull the Nginx Image
-
-```bash
-docker pull nginx
-```
-
-Downloads the official Nginx image.
-
-## Run the Nginx Container
-
-```bash
-docker run -d -p 8080:80 --name nginx-server nginx
-```
-
-Starts an Nginx container in detached mode and maps host port 8080 to container port 80.
-
-## List Running Containers
-
-```bash
-docker ps
-```
-
-Displays currently running Docker containers.
-
-## Test the Nginx Web Server
-
-```bash
-curl http://localhost:8080
-```
-
-Sends an HTTP request to the Nginx server through host port 8080.
-
-## Stop the Container
-
-```bash
-docker stop nginx-server
-```
-
-Stops the running Nginx container.
-
-## Verify the Container Status
-
-```bash
-docker ps -a
-```
-
-Displays both running and stopped containers so the stopped Nginx container can be verified.
-
-## Remove the Container
-
-```bash
-docker rm nginx-server
-```
-
-Removes the stopped Nginx container.
-
-## Container Lifecycle Summary
-
-1. `docker ps` — lists running containers.
-2. `docker stop nginx-server` — stops the Nginx container.
-3. `docker ps -a` — verifies that the container is stopped.
-4. `docker rm nginx-server` — removes the stopped container.
+1. `sudo docker pull nginx` — Downloads the official Nginx image from Docker Hub to the local machine.
+2. `sudo docker run -d -p 8080:80 nginx` — Runs the Nginx container in detached (background) mode and maps port 8080 on the host to port 80 inside the container.
+3. `curl http://localhost:8080` — Sends an HTTP request to the running container to verify the web server is responding.
+4. `sudo docker ps` — Lists all currently running containers.
+5. `sudo docker stop 9a01d04fbb92` — Stops the running Nginx container.
+6. `sudo docker ps -a` — Lists all containers, including stopped ones, to verify the container has stopped.
+7. `sudo docker rm 9a01d04fbb92` — Permanently removes the stopped container from the system.
