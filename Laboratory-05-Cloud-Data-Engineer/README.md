@@ -41,4 +41,3 @@ The required screenshots should be stored in the `screenshots/` folder:
 1. `minio-deployed.png` – terminal showing the successful MinIO deployment and running container.
 2. `minio-bucket-upload.png` – MinIO Web Console showing the `client-photos` bucket and uploaded file.
 
-> Replace the evidence placeholders with screenshots from your own KillerCoda session before submission.
