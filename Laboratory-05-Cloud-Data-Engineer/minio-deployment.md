@@ -79,23 +79,3 @@ client-photos
 Open the `client-photos` bucket and use the **Upload** button to upload a safe sample image or text file.
 
 The uploaded file demonstrates that the object storage service is working.
-
-## 7. Evidence
-
-### Screenshot 1: MinIO Deployment
-
-Save a screenshot of the KillerCoda terminal showing the successful Docker deployment and running container as:
-
-```text
-screenshots/minio-deployed.png
-```
-
-### Screenshot 2: Bucket and Uploaded Object
-
-Save a screenshot of the MinIO Web Console showing the `client-photos` bucket and uploaded object as:
-
-```text
-screenshots/minio-bucket-upload.png
-```
-
-> These screenshots must be taken from your own KillerCoda and MinIO session.
