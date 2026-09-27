@@ -10,4 +10,4 @@ Cloud storage can be divided into three primary types: Block Storage, File Stora
 
 ## Recommendation for the Client
 
-Object Storage is well suited for the client's photo-sharing application because user-uploaded images are unstructured data and may grow to millions of files. It is designed for scalable storage and easy access to large collections of objects, making it appropriate for storing photos separately from temporary web server containers.
+Object Storage is well suited for the client's photo-sharing application because user-uploaded images are unstructured data and may grow to millions of files. It is designed for scalable storage and easy access to large collections of objects, making it appropriate for storing photos separately from temporary web server containere
