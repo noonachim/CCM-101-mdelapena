@@ -1,13 +1,13 @@
-# Types of Cloud Storage
+# Storage Types Research
 
-Cloud storage can be divided into three primary types: Block Storage, File Storage, and Object Storage.
+## Comparison of Cloud Storage Types
 
 | Storage Type | Description | Primary Use Case | Cloud Provider Example |
 |---|---|---|---|
-| Block Storage | Stores data as fixed-size blocks that can be independently managed and attached to a virtual machine. | Operating system disks, databases, and applications that require low-latency storage. | AWS EBS |
-| File Storage | Stores data in a hierarchical file and folder structure that can be accessed by multiple systems over a network. | Shared files, team directories, application files, and content repositories. | AWS EFS |
-| Object Storage | Stores data as objects together with metadata and a unique identifier, rather than as blocks or a traditional folder-based file system. | Large amounts of unstructured data such as images, videos, backups, and documents. | AWS S3 |
+| Block Storage | Stores data in fixed-size blocks that can be accessed individually. | Virtual machines, databases, and applications that need high-performance storage. | AWS EBS |
+| File Storage | Stores data as files organized into folders and directories. | Shared files, documents, and applications that need a common file system. | AWS EFS |
+| Object Storage | Stores data as objects together with metadata and a unique identifier. | Images, videos, backups, documents, and other unstructured data. | AWS S3 |
 
-## Recommendation for the Client
+## Why Object Storage is Best for User-Uploaded Images
 
-Object Storage is well suited for the client's photo-sharing application because user-uploaded images are unstructured data and may grow to millions of files. It is designed for scalable storage and easy access to large collections of objects, making it appropriate for storing photos separately from temporary web server containers.
+Object Storage is the best choice for storing millions of user-uploaded images because it is designed to handle large amounts of unstructured data. It also provides scalable storage and easy access to files through applications and web services.
