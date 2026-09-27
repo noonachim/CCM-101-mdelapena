@@ -1,4 +1,4 @@
-# Mission Reflection
+# Reflection
 
 This laboratory activity helped me understand why object storage is useful for applications that need to manage a very large amount of unstructured data. For a photo-sharing application, millions of user-uploaded images can grow quickly. Object storage is designed to store objects such as photos, videos, documents, and backups without requiring them to be stored directly inside the web server. Compared with using a traditional block storage hard drive for this purpose, object storage provides a model that is more appropriate for large collections of independent files and can be accessed through a service interface.
 
