@@ -17,4 +17,4 @@ services:
       - MYSQL_PASSWORD=cloudnova_pass
       - MYSQL_DATABASE=nextcloud_db
       - MYSQL_USER=nextcloud_user
-      - MYSQL_HOST=database
+      - MYSQL_HOST=databas
