@@ -1,4 +1,4 @@
-# Mission Reflection
+# Reflection
 
 Writing a `docker-compose.yml` file makes a cloud engineer's job easier because the required infrastructure can be described in one reusable configuration file. Instead of manually typing separate commands for every container, image, port, and environment variable, the engineer can define the services once and start the complete application stack with `docker-compose up -d`. This reduces repetitive work and helps make deployments more consistent.
 
