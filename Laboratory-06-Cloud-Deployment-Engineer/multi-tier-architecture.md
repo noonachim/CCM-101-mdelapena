@@ -25,4 +25,4 @@ These values are supplied through environment variables in the Compose configura
 
 ## Why Separate Them?
 
-Keeping the web/application server and database in separate containers makes the system easier to manage, update, and troubleshoot. Each tier can be changed or scaled independently, and separating responsibilities also keeps the architecture organized instead of placing the entire application in one contain
+Keeping the web/application server and database in separate containers makes the system easier to manage, update, and troubleshoot. Each tier can be changed or scaled independently, and separating responsibilities also keeps the architecture organized instead of placing the entire application in one container.
