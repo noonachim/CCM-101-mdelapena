@@ -1,4 +1,4 @@
-# Mission 6: The Cloud Deployment Engineer
+# Laboratory Activity 6: The Cloud Deployment Engineer
 
 ## Mission Overview
 
@@ -44,13 +44,3 @@ docker compose down
 - Infrastructure as Code (IaC)
 - Technical documentation using Markdown
 - GitHub portfolio organization
-
-## Evidence
-
-The `screenshots/` folder should contain:
-
-1. `compose-deployment.png` — terminal showing the successful deployment and running containers.
-2. `nextcloud-web.png` — browser showing the Nextcloud installation page.
-3. `compose-teardown.png` — terminal showing the containers being stopped and removed.
-
-> Replace the screenshot placeholders with screenshots from your own KillerCoda deployment before submitting.
