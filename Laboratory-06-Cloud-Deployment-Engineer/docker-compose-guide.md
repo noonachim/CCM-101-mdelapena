@@ -2,7 +2,7 @@
 
 ## The `services:` Block
 
-The `services:` block defines the containers that make up the application. In this laboratory, there are two services:
+The `services:` block defines the containers that make up the application. In this laboratory, there are two services;
 
 - `database` — runs MariaDB 10.6.
 - `app` — runs the Nextcloud application.
