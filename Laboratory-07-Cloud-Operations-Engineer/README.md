@@ -40,7 +40,3 @@ docker stats
 - Real-time container monitoring
 - Technical documentation using Markdown
 - Git and GitHub portfolio management
-
-## Evidence
-
-Screenshots are stored in the `screenshots/` folder. Required evidence includes the host memory check, disk check, Nginx deployment, HTTP simulations, Docker logs, and container metrics.
