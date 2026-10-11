@@ -1,83 +1,12 @@
 # Container Observability
 
-## Nginx Deployment
-
-The client website was deployed as an Nginx Docker container using:
-
-```bash
-docker run -d --name client-website -p 8080:80 nginx
+## 404 Error Log Entry
+```
+172.17.0.1 - - [10/Oct/2026:07:27:53 +0000] "GET /hidden-admin-page HTTP/1.1" 404 153 "-" "curl/8.5.0" "-"
 ```
 
-The container was named `client-website` and port `8080` on the host was mapped to port `80` inside the container.
+Application logs help identify errors and show which requests are causing problems. They help developers find and fix issues quickly.
 
-![Nginx Deployment](screenshots/install-nginx.png)
-
-## Traffic Simulation
-
-Three successful HTTP requests were sent to the website:
-
-```bash
-curl http://localhost:8080
-curl http://localhost:8080
-curl http://localhost:8080
-```
-
-A fourth request intentionally accessed a page that does not exist:
-
-```bash
-curl http://localhost:8080/hidden-admin-page
-```
-
-The invalid request generated an HTTP `404 Not Found` response.
-
-![Simulation 1](screenshots/simulation1.png)
-
-![Simulation 2](screenshots/simulation2.png)
-
-## Application Logs
-
-The container logs were retrieved using:
-
-```bash
-docker logs client-website
-```
-
-### 404 Error Log
-
-Copy the exact single log line containing `404` from your KillerCoda output below:
-
-```text
-[PASTE THE EXACT 404 LOG LINE HERE]
-```
-
-Application logs are vital for troubleshooting because they provide a record of requests and events handled by the application. They help an operations engineer identify errors, determine when they occurred, and investigate what happened without relying only on user reports.
-
-![Docker Logs](screenshots/docker-logs.png)
-
-## Real-Time Container Metrics
-
-The container was monitored using:
-
-```bash
-docker stats
-```
-
-**Exact CPU percentage at the time of the screenshot:** `[ENTER EXACT CPU %]`
-
-**Exact Memory usage at the time of the screenshot:** `[ENTER EXACT MEMORY USAGE, e.g. 3.5MiB]`
-
-The `docker stats` command provides a live view of CPU, memory, network I/O, and other resource information for running containers.
-
-![Container Metrics](screenshots/container-metrics.png)
-
-## Observability Summary
-
-| Metric / Evidence | Result |
-|---|---|
-| Container | `client-website` |
-| Web Server | Nginx |
-| Host Port | `8080` |
-| Successful Requests | 3 |
-| Failed Request | HTTP 404 |
-| CPU Usage | `[ENTER EXACT VALUE]` |
-| Memory Usage | `[ENTER EXACT VALUE]` |
+## Container Metrics
+- **Memory Usage:** 2.785 MiB (of 1.859 GiB limit)
+- **CPU Usage:** 0.00%
