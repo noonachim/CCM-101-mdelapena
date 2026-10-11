@@ -1,4 +1,4 @@
-# Mission Reflection
+# Reflection
 
 This laboratory activity helped me understand why cloud operations engineers need to monitor both the host server and the applications running on it. Even when containers are running perfectly, the host server can still become a limitation. Containers depend on the host's CPU, memory, storage, and other resources. If the host runs out of memory or disk space, the applications inside the containers can become slow or unavailable. Checking the host baseline therefore gives an operations engineer an early warning and a reference point for later troubleshooting.
 
