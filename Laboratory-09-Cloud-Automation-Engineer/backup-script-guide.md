@@ -44,26 +44,3 @@ The five time fields are:
 | Day of Week | `*` | Every day of the week |
 
 Therefore, this expression schedules `/root/backup.sh` to run every day at 2:00 AM according to the machine's local time.
-
-## Commands Used
-```bash
-mkdir app-data
-echo "This is critical client data." > app-data/data.txt
-nano backup.sh
-chmod +x backup.sh
-./backup.sh
-ls -l backups/
-crontab -l
-env EDITOR=nano crontab -e
-crontab -l
-```
-
-## Testing and Verification
-After running `./backup.sh`, use `ls -l backups/` to confirm that a file with a name similar to `backup_YYYYMMDD_HHMMSS.tar.gz` exists. The actual timestamp will depend on when the script runs.
-
-**Important environment note:** The cron entry in the laboratory handout uses `/root/backup.sh`. This absolute path works only if the script is actually saved at `/root/backup.sh`. If your script is in a different directory, use its real absolute path in the cron entry. The script's relative paths (`app-data` and `backups`) also depend on the working directory, so for a more reliable production script, use absolute paths.
-
-## Screenshot Evidence
-Add your own screenshots to `screenshots/`:
-1. `script-execution.png` showing `./backup.sh` and `ls -l backups/`.
-2. `cron-schedule.png` showing the installed cron line from `crontab -l`.
