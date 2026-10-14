@@ -1,4 +1,4 @@
-# Research: The Language of Automation
+# Automation Research
 
 ## 1. Bash Script
 A Bash script is a text file containing shell commands that Linux can run in sequence to perform a task. The line `#!/bin/bash` is called the shebang; it tells the operating system to use Bash to interpret the commands in the file.
