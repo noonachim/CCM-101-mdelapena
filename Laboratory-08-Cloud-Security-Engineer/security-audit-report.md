@@ -11,9 +11,3 @@ The attack surface is the collection of possible points that an attacker could u
 ## Default Deny Policy
 
 A Default Deny policy blocks incoming traffic unless a specific rule allows it. This is safer than trying to block individual attackers because unknown or unwanted traffic is rejected automatically, while only the services that are intentionally exposed are permitted.
-
-## Security Audit Summary
-
-The server was prepared with a web application exposed through port 8080. The firewall configuration then followed a least-privilege approach by allowing SSH for administration and TCP port 8080 for the required web application while denying other incoming traffic by default.
-
-The audit evidence for this activity is stored in the `screenshots/` directory.
