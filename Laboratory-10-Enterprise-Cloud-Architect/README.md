@@ -1,6 +1,6 @@
 # Laboratory 10 – Mission 10: The Enterprise Cloud Architect
 
-**Course:** CCM101 – Cloud Computing | **Student:** cbadongen
+**Course:** CCM101 – Cloud Computing | **Student:** mdelapena
 
 A persistent, two-tier private cloud stack: **WordPress** (web tier) + **MySQL 8.0** (data tier) on Docker Compose, running in an Ubuntu Server VM (VirtualBox), hardened with UFW and protected by scheduled backups.
 
